@@ -8,7 +8,7 @@ on:
 
 jobs:
   nested-workflow-call:
-    uses: smiti6812/Reusableworkflows/.github/workflows/reusable.yaml@main
+    uses: smiti6812/Resusableworkflows/.github/workflows/reusable.yaml@main
     with:
       name: "Misi"
     secrets:
