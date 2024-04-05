@@ -7,6 +7,12 @@ on:
         value: ${{ jobs.generate-output.outputs.date }}
 
 jobs:
+  nested-workflow-call:
+    uses: smiti6812/Reusableworkflows/.github/workflows/reusable.yaml@main
+    with:
+      name: "Misi"
+    secrets:
+      access-token: ${{ secrets.ACCESS_TOKEN }}
   generate-output:
     runs-on: ubuntu-latest
     outputs:
